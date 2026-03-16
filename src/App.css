@@ -131,6 +131,23 @@ body {
   margin-top: 26px;
 }
 
+.contact-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(240, 240, 255, 0.9));
+  border-left: 6px solid rgba(76, 110, 245, 0.9);
+  margin-top: 22px;
+}
+
+.contact-card p {
+  margin: 0;
+  line-height: 1.5;
+  color: rgba(31, 42, 68, 0.8);
+}
+
+.contact-card a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
 button {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: white;

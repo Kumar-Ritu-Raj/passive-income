@@ -2,10 +2,6 @@ import React from 'react';
 import { earningOptions } from '../data/earningOptions.js';
 
 function ResultPage({ answers }) {
-  const handleShareWhatsApp = () => {
-    // Placeholder for WhatsApp share
-    alert('Share via WhatsApp');
-  };
 
   const handleCopyLink = () => {
     // Placeholder for copy link
@@ -51,8 +47,13 @@ function ResultPage({ answers }) {
       )}
       <div className="card share-card">
         <h2>💰 Share with friends and help them earn too.</h2>
+        <div className="card contact-card">
+        <h2>Next Step</h2>
+        <p>
+          Click a referral link or scan the QR code to register. Once you finish registering, email me at <a href="mailto:kumarrituraj234@gmail.com">kumarrituraj234@gmail.com</a> and I will help you start earning.
+        </p>
+      </div>
         <div className="button-group">
-          <button onClick={handleShareWhatsApp}>Share on WhatsApp</button>
           <button onClick={handleCopyLink}>Copy Referral Link</button>
         </div>
       </div>
