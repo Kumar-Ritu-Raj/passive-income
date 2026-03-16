@@ -70,7 +70,7 @@ function App() {
 
   return (
     <div className="App" style={{
-      backgroundImage: `url('/bgdailyincome.png')`,
+      backgroundImage: `url('${process.env.PUBLIC_URL}/bgdailyincome.png')`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center center',
       backgroundSize: 'cover',
