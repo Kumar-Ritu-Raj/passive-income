@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/passive-income/static/css/main.69b0fbd4.css",
-    "main.js": "/passive-income/static/js/main.83ab3359.js",
+    "main.css": "/passive-income/static/css/main.aee8d1b0.css",
+    "main.js": "/passive-income/static/js/main.d8b53a7f.js",
     "static/js/453.1f65c297.chunk.js": "/passive-income/static/js/453.1f65c297.chunk.js",
     "index.html": "/passive-income/index.html",
-    "main.69b0fbd4.css.map": "/passive-income/static/css/main.69b0fbd4.css.map",
-    "main.83ab3359.js.map": "/passive-income/static/js/main.83ab3359.js.map",
+    "main.aee8d1b0.css.map": "/passive-income/static/css/main.aee8d1b0.css.map",
+    "main.d8b53a7f.js.map": "/passive-income/static/js/main.d8b53a7f.js.map",
     "453.1f65c297.chunk.js.map": "/passive-income/static/js/453.1f65c297.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69b0fbd4.css",
-    "static/js/main.83ab3359.js"
+    "static/css/main.aee8d1b0.css",
+    "static/js/main.d8b53a7f.js"
   ]
 }
