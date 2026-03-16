@@ -9,13 +9,14 @@ function ResultPage({ answers }) {
 
   const handleCopyLink = () => {
     // Placeholder for copy link
-    navigator.clipboard.writeText('https://example.com/referral');
+    navigator.clipboard.writeText('https://kumar-ritu-raj.github.io/passive-income/');
     alert('Link copied');
   };
 
   return (
     <div>
-      <h1>Your Daily Income Opportunities</h1>
+      <h1>Congratulation</h1>
+      <h2>You are eligible for these offers</h2>
       {answers.search === 'yes' && (
         <div className="card opportunity-card">
           <h2>{earningOptions.search.title}</h2>
@@ -25,7 +26,7 @@ function ResultPage({ answers }) {
             style={{ maxWidth: '200px', width: '100%', margin: '10px auto' }}
           />
           <p>
-            Referral URL: <a href={earningOptions.search.url} target="_blank" rel="noreferrer">Click Me</a>
+            Referral URL: <a href={earningOptions.search.url} target="_blank" rel="noreferrer">Register Now and Earn free</a>
           </p>
           <p>
             YouTube: <a href={earningOptions.search.video} target="_blank" rel="noreferrer">Watch tutorial</a>
@@ -41,7 +42,7 @@ function ResultPage({ answers }) {
             style={{ maxWidth: '200px', width: '100%', margin: '10px auto' }}
           />
           <p>
-            Referral URL: <a href={earningOptions.shopping.url} target="_blank" rel="noreferrer">Click Me</a>
+            Referral URL: <a href={earningOptions.shopping.url} target="_blank" rel="noreferrer">Register Now and Earn free</a>
           </p>
           <p>
             YouTube: <a href={earningOptions.shopping.video} target="_blank" rel="noreferrer">Watch tutorial</a>

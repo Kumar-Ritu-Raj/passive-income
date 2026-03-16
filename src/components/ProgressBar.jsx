@@ -1,25 +1,17 @@
 import React from 'react';
 
 function ProgressBar({ currentStep, totalSteps }) {
-  const progress = (currentStep / totalSteps) * 100;
+  const progress = Math.min(100, Math.max(0, (currentStep / totalSteps) * 100));
 
   return (
-    <div style={{ width: '100%', marginBottom: '20px' }}>
-      <div style={{
-        width: '100%',
-        height: '10px',
-        backgroundColor: '#e0e0e0',
-        borderRadius: '5px',
-        overflow: 'hidden'
-      }}>
-        <div style={{
-          width: `${progress}%`,
-          height: '100%',
-          backgroundColor: '#4CAF50',
-          transition: 'width 0.3s ease'
-        }}></div>
+    <div className="progress-bar">
+      <div className="progress-bar__track">
+        <div
+          className="progress-bar__fill"
+          style={{ width: `${progress}%` }}
+        />
       </div>
-      <p style={{ textAlign: 'center', margin: '5px 0', fontSize: '14px' }}>
+      <p className="progress-bar__label">
         Step {currentStep} of {totalSteps}
       </p>
     </div>

@@ -17,7 +17,8 @@ function App() {
 
     return (
       <div className="app-container">
-        <h1 className="app-title">💰 Daily Income Finder</h1>
+        <h1 className="app-title">💰 Daily Passive Income</h1>
+        <p className="app-subtitle">Answer a few simple questions and discover easy ways to earn extra cash every day.</p>
         {showProgress && <ProgressBar currentStep={step} totalSteps={4} />}
         <div className="step-container">
           {step === 'intro' ? (
@@ -68,14 +69,17 @@ function App() {
     );
   };
 
+  const appStyle = {
+    backgroundImage: `url('${process.env.PUBLIC_URL}/bgdailyincome.png')`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center top',
+    backgroundSize: 'cover',
+    backgroundAttachment: 'fixed'
+  };
+
   return (
-    <div className="App" style={{
-      backgroundImage: `url('${process.env.PUBLIC_URL}/bgdailyincome.png')`,
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center center',
-      backgroundSize: 'cover',
-      backgroundAttachment: 'fixed'
-    }}>
+    <div className="App" style={appStyle}>
+      <div className="last-updated">Last Updated: 17th March</div>
       {renderStep()}
     </div>
   );
