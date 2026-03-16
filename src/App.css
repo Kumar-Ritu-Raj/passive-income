@@ -114,6 +114,13 @@ body {
   font-size: 1.5rem;
 }
 
+.earning-till {
+  margin: 0 0 12px;
+  font-weight: 700;
+  color: #c62828;
+  text-shadow: 0 2px 8px rgba(198, 40, 40, 0.3);
+}
+
 .button-group {
   display: flex;
   justify-content: center;
